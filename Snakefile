@@ -1,0 +1,60 @@
+from os.path import join
+
+configfile: "config.yaml"
+
+include: "rules/psql.smk"
+
+
+rule all:
+    input:
+        # PSQL
+        external_ids_psql = join(config['path']['psql'],
+                                 config['psql']['external_ids'],
+                                 'data_table.tsv'),
+        genomic_location_psql = join(config['path']['psql'],
+                                     config['psql']['genomic_location'],
+                                     'data_table.tsv'),
+        basic_features_psql = join(config['path']['psql'],
+                                     config['psql']['basic_features'],
+                                     'data_table.tsv'),
+        host_features_psql = join(config['path']['psql'],
+                                     config['psql']['host_features'],
+                                     'data_table.tsv'),
+        snoRNA_expression_psql = join(config['path']['psql'],
+                                      config['psql']['snoRNA_expression'],
+                                      'data_table.tsv'),
+        host_expression_psql = join(config['path']['psql'],
+                                    config['psql']['host_expression'],
+                                    'data_table.tsv'),
+        targets_psql = join(config['path']['psql'],
+                            config['psql']['targets'],
+                            'data_table.tsv'),
+        target_grouped_by_psql = join(config['path']['psql'],
+                                    config['psql']['target_grouped_by'],
+                                    'data_table.tsv'),
+        encode_eclip_psql = join(config['path']['psql'],
+                                    config['psql']['encode_eclip'],
+                                    'data_table.tsv'),
+        cd_boxes_psql = join(config['path']['psql'],
+                             config['psql']['snoRNA_boxes'],
+                             'cd_data_table.tsv'),
+        rRNAs_psql = join(config['path']['psql'],
+                          config['psql']['rRNAs'],
+                          'data_table.tsv'),
+        rRNA_modifications_psql = join(config['path']['psql'],
+                                       config['psql']['rRNA_modifications'],
+                                       'data_table.tsv'),
+        conversion_18S_psql = join(config['path']['psql'],
+                                       config['psql']['conversion_18S'],
+                                       'data_table.tsv'),
+        conversion_28S_psql = join(config['path']['psql'],
+                                       config['psql']['conversion_28S'],
+                                       'data_table.tsv'),
+        percentage_modification_psql = join(config['path']['psql'],
+                                            config['psql']['rRNA_percentage_modification'],
+                                            'data_table.tsv'),
+        rRNA_sample_percentage_modification_psql = join(config['path']['psql'],
+                                                        config['psql']['rRNA_sample_percentage_modification'],
+                                                        'data_table.tsv'),
+        permission_tok = 'data/psql/permission.tok',
+

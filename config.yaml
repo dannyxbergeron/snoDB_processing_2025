@@ -1,0 +1,72 @@
+path:
+    processed: data/processed_files
+    sno_host: data/sno_host
+    conservation: data/conservation
+    fasta: data/fasta
+    expression: data/expression
+    all_interactions: data/all_interactions
+    all_interactions_extended: data/all_interactions_extended
+    ENCODE: data/ENCODE
+    boxes: data/snoRNA_boxes
+    rRNA_modifications: data/Hermes_data/processed
+    psql: data/psql
+
+processed:
+    final_snodb_ids: Final_ids.tsv
+    snoRNABase: snoRNABase_hg38.tsv
+
+sno_host:
+    final_sno_host: final_host_gene_104.csv
+    final_sno_host_extended: final_host_gene_104_extended.csv
+
+conservation:
+    final_ids_conservation: final_ids_conservation.tsv
+
+snoRNA_sequences: snoRNA_sequences.tsv
+
+expression:
+    snoRNA_mapped_matrix: snoRNA_mapped_matrix.tsv
+    host_mapped_matrix: host_mapped_matrix.tsv
+
+
+all_interactions: all_interactions.tsv
+
+all_interactions_extended:
+    cd_extended: cd_interactions_extended.tsv
+    final_cd_guide_regions: final_cd_guide_regions.tsv
+    final_haca_guide_regions: final_haca_guide_regions.tsv
+
+ENCODE:
+    mapped: encode_mapped.tsv
+
+boxes:
+    final_cd_boxes: final_cd_boxes.tsv
+    final_ha_boxes: final_ha_boxes.tsv
+    sca_atlas_boxes: sca_atlas_boxes.tsv
+
+rRNA_modifications:
+    rRNA: rRNA.csv
+    all_rRNA_modifications: all_rRNA_modifications.csv
+    conversion_18S: conversion_18S.csv
+    conversion_28S: conversion_28S.csv
+    all_percentages_modifications: all_percentages_modifications.csv
+    sample_percentages_modifications: sample_percentages_modifications.csv
+
+
+psql:
+    external_ids: external_ids
+    genomic_location: genomic_location
+    basic_features: basic_features
+    host_features: host_features
+    snoRNA_expression: snoRNA_expression
+    host_expression: host_expression
+    targets: targets
+    target_grouped_by: target_grouped_by
+    encode_eclip: encode_eclip
+    snoRNA_boxes: snoRNA_boxes
+    rRNAs: rRNAs
+    conversion_18S: conversion_18S
+    conversion_28S: conversion_28S
+    rRNA_modifications: rRNA_modifications
+    rRNA_percentage_modification: rRNA_percentage_modification
+    rRNA_sample_percentage_modification: rRNA_sample_percentage_modification

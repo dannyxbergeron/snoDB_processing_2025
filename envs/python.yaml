@@ -1,0 +1,13 @@
+channels:
+  - default
+  - bioconda
+  - conda-forge
+dependencies:
+  - matplotlib =3.4.2
+  - numpy =1.21.0
+  - pandas =1.2.5
+  - seaborn =0.11.1
+  - requests =2.25.1
+  - beautifulsoup4 =4.9.3
+  - lxml =4.6.3
+  - pybedtools =0.8.2
