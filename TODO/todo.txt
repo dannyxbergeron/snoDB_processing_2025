@@ -1,0 +1,13 @@
+# Most important
+- Add Suzon to the admin users of the database
+- Find a way to coordinate our things together
+
+
+
+# Important
+- Work on the frontend for the home page
+
+
+
+
+# Could be delayed

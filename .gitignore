@@ -3,3 +3,6 @@ data/
 
 scripts/psql_container.sh
 scripts/psql_container_perm.sh
+
+
+*.png
