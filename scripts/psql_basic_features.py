@@ -8,6 +8,7 @@ from snakemake.shell import shell
 file = snakemake.input.final_snodb_ids
 cons_file = snakemake.input.final_ids_conservation
 seq_file = snakemake.input.snoRNA_sequences
+expression_file = snakemake.input.snoRNA_mapped_matrix
 
 psql_script = snakemake.output.basic_features_script
 psql_data = snakemake.output.basic_features_psql
@@ -27,7 +28,8 @@ CREATE TABLE "basic_features" (
     conservation_snoRNA_atlas varchar(50),
     conservation_phastcons DOUBLE PRECISION NOT NULL,
     length INTEGER NOT NULL,
-    sequence varchar(1000)
+    sequence varchar(1000),
+    is_expressed BOOLEAN NOT NULL
 );
     """
     import_data = """
@@ -48,6 +50,9 @@ def main():
     df = pd.read_csv(file, sep='\t')
     cons_df = pd.read_csv(cons_file, sep='\t',)
     seq_df = pd.read_csv(seq_file, sep='\t',)
+    matrix_df = pd.read_csv(expression_file, sep='\t')
+
+    expressed_dict = dict(zip(matrix_df.unique_id, matrix_df.is_expressed))
 
     print(seq_df.columns)
     length_list = df.end - df.start + 1
@@ -59,6 +64,7 @@ def main():
     df['phastcons'] = df['phastcons'].fillna(-1)
     df['length'] = length_list
     df['seq'] = df.unique_id.map(dict(zip(seq_df.unique_id, seq_df.seq)))
+    df['is_expressed'] = df.unique_id.map(expressed_dict)
 
     create_psql_script()
 

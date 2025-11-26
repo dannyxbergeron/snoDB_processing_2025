@@ -57,6 +57,7 @@ psql:
     external_ids: external_ids
     genomic_location: genomic_location
     basic_features: basic_features
+    specie: specie
     host_features: host_features
     snoRNA_expression: snoRNA_expression
     host_expression: host_expression

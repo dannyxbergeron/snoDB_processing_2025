@@ -50,6 +50,8 @@ rule psql_basic_features:
                                       config['conservation']['final_ids_conservation']),
         snoRNA_sequences = join(config['path']['fasta'],
                                 config['snoRNA_sequences']),
+        snoRNA_mapped_matrix = join(config['path']['expression'],
+                                    config['expression']['snoRNA_mapped_matrix']),
     output:
         basic_features_psql = join(config['path']['psql'],
                                      config['psql']['basic_features'],
@@ -63,6 +65,27 @@ rule psql_basic_features:
         "../envs/python.yaml"
     script:
         "../scripts/psql_basic_features.py"
+
+# --------------------------------------------------------------------------
+
+rule psql_specie:
+    input:
+        final_snodb_ids = join(config['path']['processed'],
+                               config['processed']['final_snodb_ids']),
+    output:
+        specie_psql = join(config['path']['psql'],
+                                     config['psql']['specie'],
+                                     'data_table.tsv'),
+        specie_script = join(config['path']['psql'],
+                                       config['psql']['specie'],
+                                       'data_script.sql'),
+    params:
+        host_script = 'scripts/psql_host.sh'
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/psql_specie.py"
+
 
 # --------------------------------------------------------------------------
 
@@ -352,6 +375,7 @@ tables = [
      config['psql']['external_ids'],
      config['psql']['genomic_location'],
      config['psql']['basic_features'],
+     config['psql']['specie'],
      config['psql']['host_features'],
      config['psql']['snoRNA_expression'],
      config['psql']['host_expression'],

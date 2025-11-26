@@ -279,9 +279,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="98.994951"
-     inkscape:cy="1482.904"
+     inkscape:zoom="0.49497474"
+     inkscape:cx="906.10685"
+     inkscape:cy="478.81231"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -321,6 +321,11 @@
        height="525.55298"
        x="-174.34264"
        y="-395.66577" />
+    <path
+       style="fill:#b3b3b3;stroke:#666666;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 51.408374,-233.90164 4.2258692,-303.14638"
+       id="path51"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:#b3b3b3;stroke:#666666;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 586.26225,39.766801 -8.13324,25.28928"
@@ -914,7 +919,7 @@
     <path
        id="path2569"
        style="fill:none;fill-opacity:0.866667;stroke:#ff6600;stroke-width:1.025;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="M -165.16591,-154.78419 H 2.9084026 v 61.991039 H -165.16591 Z"
+       d="M -165.16591,-154.78419 H 2.9084026 v 67.870968 H -165.16591 Z"
        sodipodi:nodetypes="ccccc" />
     <rect
        style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1.04129;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -1601,7 +1606,7 @@
          y="-148.56537">CHARACTER VARYING (50)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#999999;stroke-width:0.065;stroke:#ff0000;stroke-dasharray:none"
        x="-83.480751"
        y="-238.80341"
        id="text1480"><tspan
@@ -1611,7 +1616,7 @@
          y="-238.80341">BOOLEAN</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#999999;stroke-width:0.065;stroke:#ff0000;stroke-dasharray:none"
        x="-126.42033"
        y="-239.32147"
        id="text1484"><tspan
@@ -4056,5 +4061,97 @@
            x="-280.75293"
            y="-344.64478">CHARACTER VARYING (50)</tspan></text>
     </g>
+    <rect
+       style="fill:#d4aa00;fill-opacity:1;stroke:#d4aa00;stroke-width:0.977502;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect1"
+       width="147.53845"
+       height="9.7887506"
+       x="-144.63344"
+       y="-317.84265" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.264583"
+       x="-70.848709"
+       y="-311.16544"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         x="-70.848709"
+         y="-311.16544">raw_data.specie</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-130.52731"
+       y="-302.06873"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan22"
+         x="-130.52731"
+         y="-302.06873">unique_id</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-61.817974"
+       y="-302.06744"
+       id="text23"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         x="-61.817974"
+         y="-302.06744">CHARACTER VARYING (50)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-6.6537347"
+       y="-302.06744"
+       id="text24"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         x="-6.6537347"
+         y="-302.06744">(PK)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-134.17955"
+       y="-295.73071"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         x="-134.17955"
+         y="-295.73071">specie</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-61.845104"
+       y="-295.2114"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         x="-61.845104"
+         y="-295.2114">CHARACTER VARYING (50)</tspan></text>
+    <path
+       id="path33"
+       style="fill:none;fill-opacity:0.866667;stroke:#d4aa00;stroke-width:1.025;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M -144.63374,-317.84264 H 2.7308092 v 25.93074 H -144.63374 Z"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-76.10788"
+       y="-90.468819"
+       id="text51"><tspan
+         sodipodi:role="line"
+         id="tspan51"
+         x="-76.10788"
+         y="-90.468819">BOOLEAN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
+       x="-147.0405"
+       y="-90.986885"
+       id="text52"><tspan
+         sodipodi:role="line"
+         id="tspan52"
+         x="-147.0405"
+         y="-90.986885">is_expressed</tspan></text>
   </g>
 </svg>

@@ -21,8 +21,7 @@ CREATE TABLE "snorna_expression" (
     id SERIAL PRIMARY KEY,
     unique_id varchar(50) NOT NULL,
     value DOUBLE PRECISION NOT NULL,
-    sample_type VARCHAR(50) NOT NULL,
-    is_expressed BOOLEAN NOT NULL
+    sample_type VARCHAR(50) NOT NULL
 );
     """
     import_data = """
@@ -57,7 +56,7 @@ def main():
         var_name="sample_type",
         value_name="value",
     )
-    df = df[["unique_id", "value", "sample_type", "is_expressed"]]
+    df = df[["unique_id", "value", "sample_type"]]
 
     # Get a unique bigint as the index
     df = df.reset_index()
