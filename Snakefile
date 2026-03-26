@@ -2,11 +2,17 @@ from os.path import join
 
 configfile: "config.yaml"
 
+include: "rules/preprocessing.smk"
 include: "rules/psql.smk"
 
 
 rule all:
     input:
+        ## New preprocessing steps
+        new_final_snodb_ids = join(config['path']['processed_snodb3'],
+                                config['processed']['final_snodb_ids']),
+        new_snoRNA_mapped_matrix = join(config['path']['expression'],
+                                        config['expression']['snoRNA_mapped_matrix_snodb3']),
         # PSQL
         external_ids_psql = join(config['path']['psql'],
                                  config['psql']['external_ids'],

@@ -1,4 +1,5 @@
 path:
+    processed_snodb3: data/processed_files_snodb3
     processed: data/processed_files
     sno_host: data/sno_host
     conservation: data/conservation
@@ -23,9 +24,11 @@ conservation:
     final_ids_conservation: final_ids_conservation.tsv
 
 snoRNA_sequences: snoRNA_sequences.tsv
+snoRNA_sequences_snodb3: snoRNA_sequences_snodb3.tsv
 
 expression:
     snoRNA_mapped_matrix: snoRNA_mapped_matrix.tsv
+    snoRNA_mapped_matrix_snodb3: snoRNA_mapped_matrix_snodb3.tsv
     host_mapped_matrix: host_mapped_matrix.tsv
 
 
