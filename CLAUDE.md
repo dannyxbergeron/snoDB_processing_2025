@@ -10,6 +10,15 @@ snoDB3 is a Snakemake-based bioinformatics pipeline that processes small nucleol
 
 ### Running the Pipeline
 
+Before running any snakemake command, activate the conda environment:
+
+```bash
+source /home/danx/.zshrc
+conda activate snakemake7.24
+```
+
+Then run snakemake:
+
 ```bash
 # Run complete pipeline (create conda environments automatically)
 snakemake --use-conda

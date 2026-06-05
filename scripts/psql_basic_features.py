@@ -55,16 +55,19 @@ def main():
     expressed_dict = dict(zip(matrix_df.unique_id, matrix_df.is_expressed))
 
     print(seq_df.columns)
-    length_list = df.end - df.start + 1
     df = df[[
         'unique_id', 'gene_name', 'synonyms', 'box_type',
         'conservation',
     ]]
     df['phastcons'] = df.unique_id.map(dict(zip(cons_df.unique_id, cons_df.mean_conservation)))
     df['phastcons'] = df['phastcons'].fillna(-1)
-    df['length'] = length_list
     df['seq'] = df.unique_id.map(dict(zip(seq_df.unique_id, seq_df.seq)))
+    df['length'] = df['seq'].apply(lambda x: len(x) if pd.notna(x) else 0)
     df['is_expressed'] = df.unique_id.map(expressed_dict)
+
+    # Reorder columns to match SQL schema: length before sequence
+    df = df[['unique_id', 'gene_name', 'synonyms', 'box_type',
+             'conservation', 'phastcons', 'length', 'seq', 'is_expressed']]
 
     create_psql_script()
 

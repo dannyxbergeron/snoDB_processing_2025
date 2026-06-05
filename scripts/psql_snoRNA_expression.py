@@ -39,18 +39,6 @@ def main():
     df = pd.read_csv(file, sep="\t")
     df = df.drop(columns=["gtf", "gene_name", "snoDB_id"])
 
-    # Rename lambowitz datasets
-    df = df.rename(
-        columns={
-            "HumanRef_1": "UHR_1",
-            "HumanRef_2": "UHR_2",
-            "HumanRef_3": "UHR_3",
-            "BrainLam_1": "HBR_1",
-            "BrainLam_2": "HBR_2",
-            "BrainLam_3": "HBR_3",
-        }
-    )
-
     df = df.melt(
         id_vars=["unique_id", "is_expressed"],
         var_name="sample_type",

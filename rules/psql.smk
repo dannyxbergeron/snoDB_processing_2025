@@ -1,6 +1,6 @@
 rule psql_external_ids:
     input:
-        final_snodb_ids = join(config['path']['processed'],
+        final_snodb_ids = join(config['path']['processed_snodb3'],
                                config['processed']['final_snodb_ids']),
         final_sno_host = join(config['path']['sno_host'],
                               config['sno_host']['final_sno_host']),
@@ -24,7 +24,7 @@ rule psql_external_ids:
 
 rule psql_genomic_location:
     input:
-        final_snodb_ids = join(config['path']['processed'],
+        final_snodb_ids = join(config['path']['processed_snodb3'],
                                config['processed']['final_snodb_ids'])
     output:
         genomic_location_psql = join(config['path']['psql'],
@@ -44,14 +44,14 @@ rule psql_genomic_location:
 
 rule psql_basic_features:
     input:
-        final_snodb_ids = join(config['path']['processed'],
+        final_snodb_ids = join(config['path']['processed_snodb3'],
                                config['processed']['final_snodb_ids']),
         final_ids_conservation = join(config['path']['conservation'],
-                                      config['conservation']['final_ids_conservation']),
+                                      config['conservation']['new_ids_conservation']),
         snoRNA_sequences = join(config['path']['fasta'],
-                                config['snoRNA_sequences']),
+                                config['snoRNA_sequences_snodb3']),
         snoRNA_mapped_matrix = join(config['path']['expression'],
-                                    config['expression']['snoRNA_mapped_matrix']),
+                                    config['expression']['snoRNA_mapped_matrix_snodb3']),
     output:
         basic_features_psql = join(config['path']['psql'],
                                      config['psql']['basic_features'],
@@ -70,7 +70,7 @@ rule psql_basic_features:
 
 rule psql_specie:
     input:
-        final_snodb_ids = join(config['path']['processed'],
+        final_snodb_ids = join(config['path']['processed_snodb3'],
                                config['processed']['final_snodb_ids']),
     output:
         specie_psql = join(config['path']['psql'],
@@ -113,7 +113,7 @@ rule psql_host_features:
 rule psql_snoRNA_expression:
     input:
         snoRNA_mapped_matrix = join(config['path']['expression'],
-                                    config['expression']['snoRNA_mapped_matrix']),
+                                    config['expression']['snoRNA_mapped_matrix_snodb3']),
     output:
         snoRNA_expression_psql = join(config['path']['psql'],
                                              config['psql']['snoRNA_expression'],
@@ -219,8 +219,12 @@ rule psql_encode_eclip:
 
 # --------------------------------------------------------------------------
 
+# TODO: Box annotations for new snoRNAs are currently empty placeholders.
+# Update when box annotation data becomes available.
 rule psql_snoRNA_boxes:
     input:
+        final_snodb_ids = join(config['path']['processed_snodb3'],
+                               config['processed']['final_snodb_ids']),
         final_cd_box = join(config['path']['boxes'],
                             config['boxes']['final_cd_boxes']),
         final_ha_box = join(config['path']['boxes'],
@@ -367,6 +371,27 @@ rule psql_rRNA_sample_percentage_modification:
         "../scripts/psql_rRNA_sample_percentage_modification.py"
 
 
+# --------------------------------------------------------------------------
+
+rule psql_lookup:
+    input:
+        lookup_info = join(config['path']['lookup'],
+                           config['lookup']['lookup_info']),
+    output:
+        lookup_psql = join(config['path']['psql'],
+                           config['psql']['lookup'],
+                           'data_table.tsv'),
+        lookup_script = join(config['path']['psql'],
+                             config['psql']['lookup'],
+                             'data_script.sql'),
+    params:
+        host_script = 'scripts/psql_host.sh'
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/psql_lookup.py"
+
+
 
 
 # --------- GRANT PERMISSION ON TABLES FOR scottweb_surfer ------------------
@@ -388,6 +413,7 @@ tables = [
      config['psql']['conversion_28S'],
      config['psql']['rRNA_percentage_modification'],
      config['psql']['rRNA_sample_percentage_modification'],
+     config['psql']['lookup'],
 ]
 box_tables = [
     'cd_data_table',

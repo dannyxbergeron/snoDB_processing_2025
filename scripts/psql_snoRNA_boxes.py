@@ -10,6 +10,7 @@ cd_guide = snakemake.input.final_cd_guide
 haca_file = snakemake.input.final_ha_box
 haca_guide = snakemake.input.final_haca_guide
 sca_file = snakemake.input.sca_atlas_boxes
+ids_file = snakemake.input.final_snodb_ids
 
 psql_script = snakemake.output.snoRNA_boxes_script
 psql_cd_data = snakemake.output.cd_boxes_psql
@@ -111,6 +112,28 @@ def replace_ns(df_):
     return df
 
 
+def add_missing_snoRNAs(box_df, ids_df, box_type_filter, id_col='gene_id'):
+    """Add empty box rows for snoRNAs that don't have box annotation data."""
+    matching_ids = ids_df[ids_df['box_type'].isin(box_type_filter)]
+    existing_ids = set(box_df[id_col])
+    missing = matching_ids[~matching_ids['unique_id'].isin(existing_ids)]
+
+    if missing.empty:
+        return box_df
+
+    # Build empty rows with the same columns as box_df
+    empty_rows = []
+    for uid in missing['unique_id']:
+        row = {col: np.nan for col in box_df.columns}
+        row[id_col] = uid
+        for col in box_df.columns:
+            if 'start' in col:
+                row[col] = -1
+        empty_rows.append(row)
+
+    return pd.concat([box_df, pd.DataFrame(empty_rows)], ignore_index=True)
+
+
 def main():
 
     cd_df = pd.read_csv(cd_file, sep='\t')
@@ -118,6 +141,8 @@ def main():
     haca_df = pd.read_csv(haca_file, sep='\t')
     haca_guide_df = pd.read_csv(haca_guide, sep='\t')
     sca_df = pd.read_csv(sca_file, sep='\t')
+    ids_df = pd.read_csv(ids_file, sep='\t')[['unique_id', 'box_type']]
+
     # Remove snoRNA atlas id for unprocessed scaRNA df
     sca_df['gene_id'] = sca_df.unique_id
     sca_df.drop(columns=['unique_id'], inplace=True)
@@ -133,6 +158,11 @@ def main():
         haca_df[col] = haca_df.gene_id.map(dict(zip(haca_guide_df.unique_id, haca_guide_df[col])))
         if 'start' in col:
             haca_df[col] = haca_df[col].fillna(-1).astype(int)
+
+    # Add empty box rows for snoRNAs without annotation data
+    cd_df = add_missing_snoRNAs(cd_df, ids_df, ['C/D', 'SNORD-like'])
+    haca_df = add_missing_snoRNAs(haca_df, ids_df, ['H/ACA', 'AluACA', 'telomerase RNA'])
+    sca_df = add_missing_snoRNAs(sca_df, ids_df, ['scaRNA'])
 
     # Replace all Ns by np.nan
     cd_df = replace_ns(cd_df)

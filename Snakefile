@@ -13,6 +13,10 @@ rule all:
                                 config['processed']['final_snodb_ids']),
         new_snoRNA_mapped_matrix = join(config['path']['expression'],
                                         config['expression']['snoRNA_mapped_matrix_snodb3']),
+        new_ids_conservation = join(config['path']['conservation'],
+                                      config['conservation']['new_ids_conservation']),
+        new_snoRNA_sequences = join(config['path']['fasta'],
+                                    config['snoRNA_sequences_snodb3']),
         # PSQL
         external_ids_psql = join(config['path']['psql'],
                                  config['psql']['external_ids'],
@@ -65,5 +69,8 @@ rule all:
         rRNA_sample_percentage_modification_psql = join(config['path']['psql'],
                                                         config['psql']['rRNA_sample_percentage_modification'],
                                                         'data_table.tsv'),
+        lookup_psql = join(config['path']['psql'],
+                           config['psql']['lookup'],
+                           'data_table.tsv'),
         permission_tok = 'data/psql/permission.tok',
 

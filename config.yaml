@@ -10,6 +10,7 @@ path:
     ENCODE: data/ENCODE
     boxes: data/snoRNA_boxes
     rRNA_modifications: data/Hermes_data/processed
+    lookup: data/lookup
     psql: data/psql
 
 processed:
@@ -21,6 +22,9 @@ sno_host:
     final_sno_host_extended: final_host_gene_104_extended.csv
 
 conservation:
+    new_raw_mapped: new_raw_mapped.tsv
+    new_raw_conservation: conservation_new_snoRNA.tsv
+    new_ids_conservation: new_ids_conservation.tsv
     final_ids_conservation: final_ids_conservation.tsv
 
 snoRNA_sequences: snoRNA_sequences.tsv
@@ -56,6 +60,10 @@ rRNA_modifications:
     sample_percentages_modifications: sample_percentages_modifications.csv
 
 
+lookup:
+    lookup_info: lookup_info.tsv
+
+
 psql:
     external_ids: external_ids
     genomic_location: genomic_location
@@ -74,3 +82,4 @@ psql:
     rRNA_modifications: rRNA_modifications
     rRNA_percentage_modification: rRNA_percentage_modification
     rRNA_sample_percentage_modification: rRNA_sample_percentage_modification
+    lookup: lookup
