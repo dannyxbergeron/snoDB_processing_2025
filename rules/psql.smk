@@ -392,6 +392,67 @@ rule psql_lookup:
         "../scripts/psql_lookup.py"
 
 
+# --------------------------------------------------------------------------
+
+rule psql_rRNA_alignment_specie:
+    input:
+        specie_data = join(config['path']['rRNA_alignment'],
+                           config['rRNA_alignment']['specie']),
+    output:
+        specie_psql = join(config['path']['psql'],
+                           config['psql']['rRNA_alignment_specie'],
+                           'data_table.tsv'),
+        specie_script = join(config['path']['psql'],
+                             config['psql']['rRNA_alignment_specie'],
+                             'data_script.sql'),
+    params:
+        host_script = 'scripts/psql_host.sh'
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/psql_rRNA_alignment_specie.py"
+
+
+# --------------------------------------------------------------------------
+
+rule psql_rRNA_alignment_modification:
+    input:
+        modification_data = join(config['path']['rRNA_alignment'],
+                                 config['rRNA_alignment']['modification']),
+    output:
+        modification_psql = join(config['path']['psql'],
+                                 config['psql']['rRNA_alignment_modification'],
+                                 'data_table.tsv'),
+        modification_script = join(config['path']['psql'],
+                                   config['psql']['rRNA_alignment_modification'],
+                                   'data_script.sql'),
+    params:
+        host_script = 'scripts/psql_host.sh'
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/psql_rRNA_alignment_modification.py"
+
+
+# --------------------------------------------------------------------------
+
+rule psql_rRNA_alignment_sequence:
+    input:
+        alignment_data = join(config['path']['rRNA_alignment'],
+                              config['rRNA_alignment']['alignment']),
+    output:
+        alignment_psql = join(config['path']['psql'],
+                              config['psql']['rRNA_alignment_sequence'],
+                              'data_table.tsv'),
+        alignment_script = join(config['path']['psql'],
+                                config['psql']['rRNA_alignment_sequence'],
+                                'data_script.sql'),
+    params:
+        host_script = 'scripts/psql_host.sh'
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/psql_rRNA_alignment_sequence.py"
 
 
 # --------- GRANT PERMISSION ON TABLES FOR scottweb_surfer ------------------
@@ -414,6 +475,9 @@ tables = [
      config['psql']['rRNA_percentage_modification'],
      config['psql']['rRNA_sample_percentage_modification'],
      config['psql']['lookup'],
+     config['psql']['rRNA_alignment_specie'],
+     config['psql']['rRNA_alignment_modification'],
+     config['psql']['rRNA_alignment_sequence'],
 ]
 box_tables = [
     'cd_data_table',

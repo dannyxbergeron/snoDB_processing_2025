@@ -11,6 +11,7 @@ path:
     boxes: data/snoRNA_boxes
     rRNA_modifications: data/Hermes_data/processed
     lookup: data/lookup
+    rRNA_alignment: data/rRNA_alignment
     psql: data/psql
 
 processed:
@@ -63,6 +64,11 @@ rRNA_modifications:
 lookup:
     lookup_info: lookup_info.tsv
 
+rRNA_alignment:
+    specie: rRNA_specie_table.tsv
+    modification: modification_table.tsv
+    alignment: alignment_table.tsv
+
 
 psql:
     external_ids: external_ids
@@ -83,3 +89,6 @@ psql:
     rRNA_percentage_modification: rRNA_percentage_modification
     rRNA_sample_percentage_modification: rRNA_sample_percentage_modification
     lookup: lookup
+    rRNA_alignment_specie: rRNA_alignment_specie
+    rRNA_alignment_modification: rRNA_alignment_modification
+    rRNA_alignment_sequence: rRNA_alignment_sequence
