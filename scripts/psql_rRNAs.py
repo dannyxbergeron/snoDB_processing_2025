@@ -22,13 +22,16 @@ def create_psql_script():
 CREATE TABLE "rRNAs" (
     rRNA_id varchar(50) NOT NULL PRIMARY KEY,
     rRNA_name varchar(50) NOT NULL,
+    species varchar(50) NOT NULL,
+    rRNA_type varchar(30) NOT NULL,
     sequence varchar(7500) NOT NULL,
     sources varchar(200) NOT NULL,
-    modif_version varchar(30) NOT NULL
+    modif_version varchar(30) NOT NULL,
+    UNIQUE (species, rRNA_name, modif_version)
 );
     """
     import_data = """
-\\copy "rRNAs" (rRNA_id, rRNA_name, sequence, sources, modif_version) \
+\\copy "rRNAs" (rRNA_id, rRNA_name, species, rRNA_type, sequence, sources, modif_version) \
 FROM '/sql/data_table.tsv' \
 WITH (DELIMITER E'\\t', NULL '.');\n
     """
@@ -47,25 +50,32 @@ def main():
     df = pd.read_csv(file)
 
     modif_version = []
-    for sources in df['references'].values:
-        if 'snoRNABase' in sources:
+    for ref_string in df['references'].values:
+        if 'snoRNABase' in ref_string:
             modif_version.append('snoRNABase')
-        elif 'Incarnato' in sources:
+        elif 'Incarnato' in ref_string:
             modif_version.append('incarnato')
-        elif 'snOPY' in sources:
+        elif 'snOPY' in ref_string:
             modif_version.append('snOPY')
         else:
-            print(sources)
+            print(ref_string)
             print('ERROR !!!')
             exit()
 
     df['modif_version'] = modif_version
+    # All current rRNA entries are Human; snoRNABase anchors the reference version.
+    df['species'] = 'Human'
+    df['rRNA_type'] = np.where(df['modif_version'] == 'snoRNABase', 'ref', 'alt')
+    df = df.rename(columns={'references': 'sources'})
 
     # Change DNA sequence to RNA sequence
     df.sequence = df.sequence.str.replace('T', 'U')
 
     create_psql_script()
 
+    # Column order must match the \copy list in create_psql_script().
+    df = df[['rRNA_id', 'rRNA_name', 'species', 'rRNA_type',
+             'sequence', 'sources', 'modif_version']]
     df.to_csv(psql_data, sep='\t', index=False, header=False)
 
     # Copy the docker container script in the folder

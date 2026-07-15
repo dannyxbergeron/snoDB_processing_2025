@@ -279,9 +279,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69999999"
-     inkscape:cx="3387.8572"
-     inkscape:cy="958.57144"
+     inkscape:zoom="1.979899"
+     inkscape:cx="3154.959"
+     inkscape:cy="945.5028"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -319,7 +319,7 @@
        id="rect1722"
        width="934.84241"
        height="525.55298"
-       x="-174.34264"
+       x="-1164.6403"
        y="-395.66577" />
     <path
        style="fill:#b3b3b3;stroke:#666666;stroke-width:0.965;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
@@ -3142,12 +3142,12 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="455.96933"
-       y="-162.10947"
+       y="-148.88029"
        id="text1814"><tspan
          sodipodi:role="line"
          id="tspan1931"
          x="455.96933"
-         y="-162.10947">sequence</tspan></text>
+         y="-148.88029">sequence</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
@@ -3162,32 +3162,32 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="519.38983"
-       y="-161.70767"
+       y="-148.4785"
        id="text1822"><tspan
          sodipodi:role="line"
          id="tspan1917"
          x="519.38983"
-         y="-161.70767">CHARACTER VARYING (10000)</tspan></text>
+         y="-148.4785">CHARACTER VARYING (10000)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="516.44427"
-       y="-155.3374"
+       y="-142.10823"
        id="text1830"><tspan
          sodipodi:role="line"
          id="tspan1935"
          x="516.44427"
-         y="-155.3374">CHARACTER VARYING (200)</tspan></text>
+         y="-142.10823">CHARACTER VARYING (200)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="453.75757"
-       y="-155.36841"
+       y="-142.13924"
        id="text1840"><tspan
          sodipodi:role="line"
          id="tspan3057"
          x="453.75757"
-         y="-155.36841">sources</tspan></text>
+         y="-142.13924">sources</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
@@ -3242,46 +3242,46 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="529.63574"
-       y="-80.959816"
+       y="-65.859085"
        id="text1828"><tspan
          sodipodi:role="line"
          id="tspan192"
          x="529.63574"
-         y="-80.959816">base</tspan></text>
+         y="-65.859085">base</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="531.6925"
-       y="-95.462273"
+       y="-80.361542"
        id="text1832"><tspan
          sodipodi:role="line"
          id="tspan188"
          x="531.6925"
-         y="-95.462273">pos_id</tspan></text>
+         y="-80.361542">pos_id</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="606.49207"
-       y="-82.17202"
+       y="-67.071289"
        id="text1836"><tspan
          sodipodi:role="line"
          id="tspan1949"
          x="606.49207"
-         y="-82.17202">CHARACTER VARYING (1)</tspan></text>
+         y="-67.071289">CHARACTER VARYING (1)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="585.18976"
-       y="-95.347702"
+       y="-80.246971"
        id="text1861"><tspan
          sodipodi:role="line"
          id="tspan1945"
          x="585.18976"
-         y="-95.347702">INTEGER</tspan></text>
+         y="-80.246971">INTEGER</tspan></text>
     <path
        id="path2240"
        style="fill:none;fill-opacity:0.866667;stroke:#6f918a;stroke-width:0.95192;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 586.0872,-195.40625 h 145.66892 l 0,60.88064 H 586.0872 Z"
+       d="m 586.0872,-195.40625 h 145.66892 l 0,57.00523 H 586.0872 Z"
        sodipodi:nodetypes="ccccc" />
     <rect
        style="fill:#6f918a;fill-opacity:1;stroke:none;stroke-width:0.923564;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -3334,80 +3334,82 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="608.90515"
-       y="-154.62131"
+       y="-148.20685"
        id="text2318"><tspan
          sodipodi:role="line"
          id="tspan2334"
          x="608.90515"
-         y="-154.62131">modification_type</tspan></text>
+         y="-148.20685">modification_type</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
-       x="607.88062"
-       y="-167.42162"
+       x="596.11261"
+       y="-161.00716"
        id="text2322"><tspan
          sodipodi:role="line"
-         id="tspan190">pos_id</tspan></text>
+         id="tspan190"
+         x="596.11261"
+         y="-161.00716">pos_id</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="675.83875"
-       y="-154.62131"
+       y="-148.20685"
        id="text2326"><tspan
          sodipodi:role="line"
          id="tspan2336"
          x="675.83875"
-         y="-154.62131">CHARACTER VARYING (30)</tspan></text>
+         y="-148.20685">CHARACTER VARYING (30)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="653.0365"
-       y="-166.89581"
+       y="-160.48135"
        id="text2330"><tspan
          sodipodi:role="line"
          id="tspan2328"
          x="653.0365"
-         y="-166.89581">INTEGER</tspan></text>
+         y="-160.48135">INTEGER</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="601.11615"
-       y="-173.23267"
+       y="-166.81821"
        id="text1996"><tspan
          sodipodi:role="line"
          id="tspan133"
          x="601.11615"
-         y="-173.23267">rrna_name</tspan></text>
+         y="-166.81821">rrna_name</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="675.83875"
-       y="-173.75719"
+       y="-167.34273"
        id="text2003"><tspan
          sodipodi:role="line"
          id="tspan2186"
          x="675.83875"
-         y="-173.75719">CHARACTER VARYING (20)</tspan></text>
+         y="-167.34273">CHARACTER VARYING (20)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="600.37335"
-       y="-160.55896"
+       y="-154.1445"
        id="text2012"><tspan
          sodipodi:role="line"
          id="tspan2018"
          x="600.37335"
-         y="-160.55896">nucleotide</tspan></text>
+         y="-154.1445">nucleotide</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="674.36597"
-       y="-161.05247"
+       y="-154.63802"
        id="text2016"><tspan
          sodipodi:role="line"
          id="tspan2014"
          x="674.36597"
-         y="-161.05247">CHARACTER VARYING (1)</tspan></text>
+         y="-154.63802">CHARACTER VARYING (1)</tspan></text>
     <rect
        style="fill:none;stroke:#b3b3b3;stroke-width:1.94753;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect2388"
@@ -3420,22 +3422,22 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="514.9715"
-       y="-149.35358"
+       y="-136.1244"
        id="text3083"><tspan
          sodipodi:role="line"
          id="tspan3089"
          x="514.9715"
-         y="-149.35358">CHARACTER VARYING (30)</tspan></text>
+         y="-136.1244">CHARACTER VARYING (30)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="460.78555"
-       y="-149.38458"
+       y="-136.15541"
        id="text3087"><tspan
          sodipodi:role="line"
          id="tspan3091"
          x="460.78555"
-         y="-149.38458">modif_version</tspan></text>
+         y="-136.15541">modif_version</tspan></text>
     <path
        id="path1908"
        style="fill:none;fill-opacity:0.866667;stroke:#00aa00;stroke-width:0.95192;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
@@ -3592,22 +3594,22 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="610.52777"
-       y="-148.53076"
+       y="-142.1163"
        id="text1997"><tspan
          sodipodi:role="line"
          id="tspan2008"
          x="610.52777"
-         y="-148.53076">modification_name</tspan></text>
+         y="-142.1163">modification_name</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
        x="675.83875"
-       y="-148.53076"
+       y="-142.1163"
        id="text2004"><tspan
          sodipodi:role="line"
          id="tspan2001"
          x="675.83875"
-         y="-148.53076">CHARACTER VARYING (30)</tspan></text>
+         y="-142.1163">CHARACTER VARYING (30)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
@@ -4562,26 +4564,28 @@
     <path
        id="path2"
        style="fill:none;fill-opacity:0.866667;stroke:#008066;stroke-width:0.95192;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 441.13319,-191.22357 h 129.03882 l 0,68.57206 H 441.13319 Z"
+       d="m 441.13319,-191.22357 h 129.03882 l 0,58.68309 H 441.13319 Z"
        sodipodi:nodetypes="ccccc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="514.9715"
-       y="-143.20638"
+       y="-161.7272"
        id="text4"><tspan
          sodipodi:role="line"
-         id="tspan165">CHARACTER VARYING (50)</tspan></text>
+         id="tspan165"
+         x="514.9715"
+         y="-161.7272">CHARACTER VARYING (50)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="453.47205"
-       y="-143.23738"
+       y="-161.75821"
        id="text43"><tspan
          sodipodi:role="line"
          id="tspan58"
          x="453.47205"
-         y="-143.23738">species</tspan></text>
+         y="-161.75821">species</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.264583"
@@ -4910,121 +4914,121 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="514.9715"
-       y="-129.9772"
+       y="-155.30161"
        id="text175"><tspan
          sodipodi:role="line"
          id="tspan174"
          x="514.9715"
-         y="-129.9772">CHARACTER VARYING (30)</tspan></text>
+         y="-155.30161">CHARACTER VARYING (30)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="455.49777"
-       y="-130.00821"
+       y="-155.33263"
        id="text179"><tspan
          sodipodi:role="line"
          id="tspan179"
          x="455.49777"
-         y="-130.00821">rrna_type</tspan></text>
+         y="-155.33263">rrna_type</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="528.16168"
-       y="-88.658699"
+       y="-73.557968"
        id="text185"><tspan
          sodipodi:role="line"
          id="tspan191"
          x="528.16168"
-         y="-88.658699">pos</tspan></text>
+         y="-73.557968">pos</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="585.18976"
-       y="-88.544128"
+       y="-73.443398"
        id="text186"><tspan
          sodipodi:role="line"
          id="tspan186"
          x="585.18976"
-         y="-88.544128">INTEGER</tspan></text>
+         y="-73.443398">INTEGER</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="607.96356"
-       y="-66.501198"
+       y="-59.017651"
        id="text194"><tspan
          sodipodi:role="line"
          id="tspan194"
          x="607.96356"
-         y="-66.501198">CHARACTER VARYING (30)</tspan></text>
+         y="-59.017651">CHARACTER VARYING (30)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="540.36639"
-       y="-66.532204"
+       y="-59.048656"
        id="text195"><tspan
          sodipodi:role="line"
          id="tspan195"
          x="540.36639"
-         y="-66.532204">modif_version</tspan></text>
+         y="-59.048656">modif_version</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="607.96356"
-       y="-74.339119"
+       y="-94.517967"
        id="text199"><tspan
          sodipodi:role="line"
          id="tspan199"
          x="607.96356"
-         y="-74.339119">CHARACTER VARYING (50)</tspan></text>
+         y="-94.517967">CHARACTER VARYING (50)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="533.05286"
-       y="-74.370125"
+       y="-94.548973"
        id="text200"><tspan
          sodipodi:role="line"
          id="tspan200"
          x="533.05286"
-         y="-74.370125">species</tspan></text>
+         y="-94.548973">species</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="536.69604"
-       y="-60.08086"
+       y="-87.876892"
        id="text201"><tspan
          sodipodi:role="line"
          id="tspan201"
          x="536.69604"
-         y="-60.08086">rrna_name</tspan></text>
+         y="-87.876892">rrna_name</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="607.96356"
-       y="-60.35474"
+       y="-88.150772"
        id="text202"><tspan
          sodipodi:role="line"
          id="tspan202"
          x="607.96356"
-         y="-60.35474">CHARACTER VARYING (20)</tspan></text>
+         y="-88.150772">CHARACTER VARYING (20)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
        x="675.24335"
-       y="-140.86293"
+       y="-173.4698"
        id="text204"><tspan
          sodipodi:role="line"
          id="tspan204"
          x="675.24335"
-         y="-140.86293">CHARACTER VARYING (50)</tspan></text>
+         y="-173.4698">CHARACTER VARYING (50)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.264583"
-       x="600.33264"
-       y="-140.89394"
+       x="597.47296"
+       y="-173.50082"
        id="text205"><tspan
          sodipodi:role="line"
          id="tspan205"
-         x="600.33264"
-         y="-140.89394">species</tspan></text>
+         x="597.47296"
+         y="-173.50082">species</tspan></text>
   </g>
 </svg>

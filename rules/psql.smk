@@ -281,6 +281,8 @@ rule psql_rRNA_modifications:
     input:
         all_rRNA_modifications = join(config['path']['rRNA_modifications'],
                                       config['rRNA_modifications']['all_rRNA_modifications']),
+        rRNA_conversion_long = join(config['path']['rRNA_processed'],
+                                    config['rRNA_modifications']['rRNA_conversion_long']),
     output:
         rRNA_modifications_psql = join(config['path']['psql'],
                                        config['psql']['rRNA_modifications'],
@@ -296,42 +298,42 @@ rule psql_rRNA_modifications:
         "../scripts/psql_rRNA_modifications.py"
 
 
-rule psql_conversion_18S:
+# Build the generic, long-format rRNA conversion table (universal pos_id grid)
+# from the wide conversion CSVs. Pure pandas preprocessing -- no docker/psql.
+# Consumed by psql_rRNA_conversion (verbatim load) and psql_rRNA_modifications
+# (to map each modification's reference position onto pos_id).
+rule build_rRNA_conversion:
     input:
         conversion_18S = join(config['path']['rRNA_modifications'],
                               config['rRNA_modifications']['conversion_18S']),
-    output:
-        conversion_18S_psql = join(config['path']['psql'],
-                                       config['psql']['conversion_18S'],
-                                       'data_table.tsv'),
-        conversion_18S_script = join(config['path']['psql'],
-                                         config['psql']['conversion_18S'],
-                                         'data_script.sql'),
-    params:
-        host_script = 'scripts/psql_host.sh'
-    conda:
-        "../envs/python.yaml"
-    script:
-        "../scripts/psql_conversion_18S.py"
-
-
-rule psql_conversion_28S:
-    input:
         conversion_28S = join(config['path']['rRNA_modifications'],
                               config['rRNA_modifications']['conversion_28S']),
     output:
-        conversion_28S_psql = join(config['path']['psql'],
-                                       config['psql']['conversion_28S'],
-                                       'data_table.tsv'),
-        conversion_28S_script = join(config['path']['psql'],
-                                         config['psql']['conversion_28S'],
-                                         'data_script.sql'),
+        rRNA_conversion_long = join(config['path']['rRNA_processed'],
+                                    config['rRNA_modifications']['rRNA_conversion_long']),
+    conda:
+        "../envs/python.yaml"
+    script:
+        "../scripts/build_rRNA_conversion.py"
+
+
+rule psql_rRNA_conversion:
+    input:
+        rRNA_conversion_long = join(config['path']['rRNA_processed'],
+                                    config['rRNA_modifications']['rRNA_conversion_long']),
+    output:
+        rRNA_conversion_psql = join(config['path']['psql'],
+                                    config['psql']['rRNA_conversion'],
+                                    'data_table.tsv'),
+        rRNA_conversion_script = join(config['path']['psql'],
+                                      config['psql']['rRNA_conversion'],
+                                      'data_script.sql'),
     params:
         host_script = 'scripts/psql_host.sh'
     conda:
         "../envs/python.yaml"
     script:
-        "../scripts/psql_conversion_28S.py"
+        "../scripts/psql_rRNA_conversion.py"
 #____________________________________________________________________________
 rule psql_rRNA_percentage_modification:
     input:
@@ -470,8 +472,7 @@ tables = [
      config['psql']['encode_eclip'],
      config['psql']['rRNAs'],
      config['psql']['rRNA_modifications'],
-     config['psql']['conversion_18S'],
-     config['psql']['conversion_28S'],
+     config['psql']['rRNA_conversion'],
      config['psql']['rRNA_percentage_modification'],
      config['psql']['rRNA_sample_percentage_modification'],
      config['psql']['lookup'],

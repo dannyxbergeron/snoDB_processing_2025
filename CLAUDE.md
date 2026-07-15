@@ -62,6 +62,10 @@ envs/
    - Each rule generates a `data_table.tsv` and `data_script.sql` in `data/psql/<table_name>/`
    - Scripts generate SQL with: schema selection, table drop, table creation, data import
    - Docker containers mount the data directory and execute SQL scripts
+   - A few tables have a **preprocessing** rule that builds an intermediate TSV first (no docker):
+     `build_rRNA_conversion` computes the universal `pos_id` alignment grid
+     (`data/rRNA_processed/rRNA_conversion_long.tsv`), consumed by both
+     `psql_rRNA_conversion` and `psql_rRNA_modifications`. See `docs/rRNA_rework.md`.
 
 ### PostgreSQL Tables Generated
 
@@ -74,7 +78,7 @@ envs/
 - `targets` / `target_grouped_by`: rRNA modification targets
 - `encode_eclip`: ENCODE eCLIP data
 - `snoRNA_boxes`: C/D and H/ACA box annotations (cd_data_table, haca_data_table, sca_data_table)
-- `rRNAs`, `rRNA_modifications`, `conversion_18S`, `conversion_28S`: rRNA modification data
+- `rRNAs` (per-version rRNA sequences; carries `species` + `rRNA_type` ref/alt), `rRNA_modifications` (version-agnostic, keyed by a universal `pos_id`), `rRNA_conversion` (merged from the former `conversion_18S`/`conversion_28S`; long-format native-position map keyed by `pos_id`): rRNA modification data. See `docs/rRNA_rework.md`.
 
 ### Script Pattern
 
@@ -100,3 +104,15 @@ All file paths are centralized in `config.yaml`. When adding new data sources:
 ## Database Schema
 
 The database schema is documented in `database_organisation/snoDB3_schema.svg` (or `.png`).
+
+## Documentation
+
+Topic-specific docs live in `docs/`:
+
+- `docs/rRNA_rework.md` — change log and debugging guide for the rRNA table rework
+  (generic multi-species schema; the `pos_id` threading algorithm; the
+  `rRNA_conversion` merge of `conversion_18S`/`conversion_28S`). Read this before
+  touching `rRNAs`, `rRNA_modifications`, `rRNA_conversion`, or `build_rRNA_conversion.py`.
+- `docs/rRNA_django_migration.md` — handoff guide for migrating the downstream
+  Django web project to the new rRNA schema (model/query rewrites, how to
+  reconstruct the old per-source positions from `pos_id` + `rRNA_conversion`).

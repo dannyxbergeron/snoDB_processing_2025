@@ -10,6 +10,7 @@ path:
     ENCODE: data/ENCODE
     boxes: data/snoRNA_boxes
     rRNA_modifications: data/Hermes_data/processed
+    rRNA_processed: data/rRNA_processed
     lookup: data/lookup
     rRNA_alignment: data/rRNA_alignment
     psql: data/psql
@@ -57,6 +58,7 @@ rRNA_modifications:
     all_rRNA_modifications: all_rRNA_modifications.csv
     conversion_18S: conversion_18S.csv
     conversion_28S: conversion_28S.csv
+    rRNA_conversion_long: rRNA_conversion_long.tsv
     all_percentages_modifications: all_percentages_modifications.csv
     sample_percentages_modifications: sample_percentages_modifications.csv
 
@@ -83,8 +85,7 @@ psql:
     encode_eclip: encode_eclip
     snoRNA_boxes: snoRNA_boxes
     rRNAs: rRNAs
-    conversion_18S: conversion_18S
-    conversion_28S: conversion_28S
+    rRNA_conversion: rRNA_conversion
     rRNA_modifications: rRNA_modifications
     rRNA_percentage_modification: rRNA_percentage_modification
     rRNA_sample_percentage_modification: rRNA_sample_percentage_modification
